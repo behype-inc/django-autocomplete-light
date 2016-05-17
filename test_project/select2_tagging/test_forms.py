@@ -49,7 +49,7 @@ class TagSelect2TestMixin(object):
                 }
             ).render('test', value=[
                 six.text_type(tag),
-            ]),
+            ], attrs={'required': True}),
             six.text_type(form['test'].as_widget())
         )
 
